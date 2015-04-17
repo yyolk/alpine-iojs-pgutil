@@ -4,6 +4,7 @@ FROM mhart/alpine-iojs:latest
 RUN apk update && \
   apk add postgresql-client && \
   apk add bash && \
+  apk add git && \
   rm -rf /var/cache/apk/*
 
 RUN mkdir -p /usr/src/app
