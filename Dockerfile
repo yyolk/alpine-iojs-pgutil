@@ -5,6 +5,7 @@ RUN apk update && \
   apk add postgresql-client && \
   apk add bash && \
   apk add git && \
+  apk add python && \
   rm -rf /var/cache/apk/*
 
 RUN mkdir -p /usr/src/app
