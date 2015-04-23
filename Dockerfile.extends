@@ -1,0 +1,7 @@
+FROM mhart/alpine-iojs
+
+RUN apk update && \
+  apk add postgresql-client && \
+  apk add bash && \
+  apk add make gcc g++ paxctl curl \
+  rm -rf /var/cache/apk/*

@@ -2,7 +2,7 @@ FROM mhart/alpine-iojs:latest
 
 
 RUN apk update && \
-  apk add postgresql-client && \
+  apk add postgresql postgresql-client && \
   apk add bash && \
   apk add git && \
   apk add python && \
